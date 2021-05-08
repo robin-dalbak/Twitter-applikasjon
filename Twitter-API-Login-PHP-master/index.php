@@ -5,9 +5,9 @@ require 'autoload.php';
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 
-define( 'CONSUMER_KEY', 'xWDoh6IrvFW5gs7UfIAewSQWN' );
-define( 'CONSUMER_SECRET', 'nAaU0u5LniDergV58HxnNWN7dodpOH4HeYk3Z8e8vkpdHLs3gL' );
-define( 'OAUTH_CALLBACK', 'http://applikasjon.com/Twitter-API-Login-PHP-master/callback.php' );
+define( 'CONSUMER_KEY', '' );
+define( 'CONSUMER_SECRET', '' );
+define( 'OAUTH_CALLBACK', '' );
 if ( ! isset( $_SESSION['access_token'] ) ) {
 	$connection                     = new TwitterOAuth( CONSUMER_KEY, CONSUMER_SECRET );
 	$request_token                  = $connection->oauth( 'oauth/request_token', array( 'oauth_callback' => OAUTH_CALLBACK ) );
